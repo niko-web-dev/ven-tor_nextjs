@@ -1,0 +1,113 @@
+
+@font-face {
+  font-family: lacart;
+  src: url(../lacart.woff2);
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'lacart';
+  width: 100%;
+
+}
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+}
+.bg{
+  background-image: url('/assets/images/bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.main{
+  display:flex;
+  flex-wrap: wrap;
+  text-align: center;
+  overflow: overlay;
+  height: 100vh;
+  justify-content: space-around;
+  font-family: 'lacart';
+}
+
+
+.minimal_page,
+.restoran,
+.tepl_obor, 
+.holod_obor,
+.your-teh-slugba {
+  overflow: overlay;
+  height: 100vh;
+  font-family: 'lacart';
+  width: 100%;
+  position: relative;
+  font-size: 36px;
+  color: #000;
+}
+.your_teh_slugba {
+  width: 100%;
+  height: 100vh;
+}
+.your_teh_slugba_img{
+  width: 100%;
+}
+
+.menu  img{
+  width: 300px;
+}
+.btn_bottom{
+  vertical-align:bottom;
+  float:right;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.price_styles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.price_styles_wrap {
+  background: rgba(255,255,255,0.8);
+  border-radius: 10%;
+  padding: 20px;
+}
+.price_styles  span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.price_styles button {
+  background: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+@media screen and (max-width: 760px){
+  .menu_text {
+    font-size: 18px;
+  }
+  .main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 760px){
+  .menu_link  img{
+    width: 250px;
+  }
+}
