@@ -1,14 +1,17 @@
 import BackButton from '@/components/BackBtn/BackButton'
 import PhoneButton from '@/components/PhoneButton/PhoneButton'
 
+import { useUser } from '../../server/lib/hooks';
 const isAuth = true
 
-const AuthPage = () => {
 
+
+const AuthPage = () => {
+const [user] = useUser();
   return (
       <div className="bg">
         <div className="main">
-        {isAuth 
+        {!user
           ? 
           <div className="form">
             <h2>
@@ -55,3 +58,4 @@ const AuthPage = () => {
 }
 
 export default AuthPage
+

@@ -7,10 +7,5 @@ export function useUser() {
   const user = data && data.user;
   return [user, { mutate }];
 }
-export function useAllUser() {
-  const { data, mutate } = useSWR('/api/users', fetcher);
-  console.log(data);
-  const users = data.users;
-  return [users, { mutate }];
-}
+
 

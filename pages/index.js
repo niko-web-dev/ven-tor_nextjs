@@ -2,6 +2,8 @@ import Head from 'next/head';
 
 import MainLink from '../components/MainLink'
 
+import {useUser, useAllUser} from "../server/lib/hooks";
+
 export default function Home() {
   return (
     <div className="container">
@@ -20,6 +22,7 @@ export default function Home() {
           text="Minimal page" />
         </div>
 
+        <Navbar/>
       </main>
       
       <style jsx global>{`
@@ -83,3 +86,24 @@ export default function Home() {
     </div>
   );
 }
+
+const Navbar = () => {
+  const [user, { mutate }] = useUser();
+  const handleLogout = async () => {
+    await fetch('/api/auth', {
+      method: 'DELETE',
+    });
+    // set the user state to null
+    mutate(null);
+  };
+  
+    return (
+    
+      /* ... */
+      
+      <button onClick={handleLogout}>Logout</button>
+      /* ... */
+  );
+ 
+  
+};
