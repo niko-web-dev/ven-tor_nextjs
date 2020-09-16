@@ -1,6 +1,4 @@
-
 export default {
-  
   btnMinPage:[
     {id: '1', url: '/minimal-page/restoran', img: '/assets/images/menu-btn/menu-1.png', text: 'Я в ресторане/баре (для hoREcatn)'},
     {id: '2', url: '/minimal-page/hotel', img: '/assets/images/menu-btn/menu-2.png', text: 'Я в гостинице/хостеле (для HOreca)'},
@@ -33,7 +31,7 @@ export default {
     {id: '2', url: '/minimal-page/restoran/kondey/montag', img: '/assets/images/menu-btn/menu-4.png', text: 'Монтаж'},
     {id: '3', url: '/minimal-page/restoran/kondey/remont', img: '/assets/images/menu-btn/menu-2.png', text: 'Ремонт'},
     {id: '4', url: '/special-service', img: '/assets/images/menu-btn/menu-3.png', text: 'Специальные услуги'},
-    {id: '5', url: '/cabinet', img: '/assets/images/menu-btn/menu-1.png', text: 'Личный кабинет'},
+    {id: '5', url: '/auth', img: '/assets/images/menu-btn/menu-1.png', text: 'Личный кабинет'},
     {id: '6', url: '/contact', img: '/assets/images/menu-btn/menu-2.png', text: 'Контакты'},
   ],
   btnRestoran: [
@@ -44,7 +42,7 @@ export default {
     {id: '5', url: '/minimal-page/restoran/beer-system', img: '/assets/images/menu-btn/menu-3.png', text: 'Пивная система'},
     {id: '6', url: '/minimal-page/restoran/skud', img: '/assets/images/menu-btn/menu-1.png', text: 'СКУД'},
     {id: '7', url: '/minimal-page/restoran/special-service', img: '/assets/images/menu-btn/menu-2.png', text: 'Специальные услуги'},
-    {id: '8', url: '/minimal-page/restoran/cabinet', img: '/assets/images/menu-btn/menu-3.png', text: 'Личный кабинет'},
+    {id: '8', url: '/auth', img: '/assets/images/menu-btn/menu-3.png', text: 'Личный кабинет'},
     {id: '9', url: '/contact', img: '/assets/images/menu-btn/menu-2.png', text: 'Контакты'},
   ],
   btnTeplObor: [
@@ -63,5 +61,4 @@ export default {
     {id: '4', url: '/minimal-page/restoran/ventilyatsya/remont', img: '/assets/images/menu-btn/menu-5.png', text: 'Ремонт'},
     {id: '5', url: '/contact', img: '/assets/images/menu-btn/menu-4.png', text: 'Контакты'},
   ]
-
 }

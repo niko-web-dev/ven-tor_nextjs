@@ -1,6 +1,6 @@
-import Btn from '../../../components/Btn'
-import BackButton from '../../../components/BackButton'
-import PhoneButton from '../../../components/PhoneButton'
+import Btn from '../../../components/Btn/Btn'
+import BackButton from '../../../components/BackBtn/BackButton'
+import PhoneButton from '../../../components/PhoneButton/PhoneButton'
 
 import btns from '../../../db'
 

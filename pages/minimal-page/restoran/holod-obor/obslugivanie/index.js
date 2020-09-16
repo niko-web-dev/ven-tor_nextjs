@@ -1,5 +1,5 @@
-import BackButton from "@/components/BackButton";
-import PhoneButton from "@/components/PhoneButton";
+import BackButton from "@/components/BackBtn/BackButton";
+import PhoneButton from "@/components/PhoneButton/PhoneButton";
 
 
 export default function RestoranObslygivanie() {
