@@ -7,7 +7,7 @@ export default {
     {id: '5', url: '/minimal-page/live', img: '/assets/images/menu-btn/menu-2.png', text: 'Для жилых площадей'},
     {id: '6', url: '/your-teh-slugba', img: '/assets/images/menu-btn/menu-1.png', text: 'Ваша техническая служба'},
     {id: '7', url: '/special-service', img: '/assets/images/menu-btn/menu-3.png', text: 'Специальные услуги'},
-    {id: '8', url: '/minimal-page/lk', img: '/assets/images/menu-btn/menu-5.png', text: 'Личный кабинет'},
+    {id: '8', url: '/cabinet', img: '/assets/images/menu-btn/menu-5.png', text: 'Личный кабинет'},
     {id: '9', url: '/contact', img: '/assets/images/menu-btn/menu-4.png', text: 'Контакты'}
   ],
   btnBeerSystem: [
@@ -31,7 +31,7 @@ export default {
     {id: '2', url: '/minimal-page/restoran/kondey/montag', img: '/assets/images/menu-btn/menu-4.png', text: 'Монтаж'},
     {id: '3', url: '/minimal-page/restoran/kondey/remont', img: '/assets/images/menu-btn/menu-2.png', text: 'Ремонт'},
     {id: '4', url: '/special-service', img: '/assets/images/menu-btn/menu-3.png', text: 'Специальные услуги'},
-    {id: '5', url: '/auth', img: '/assets/images/menu-btn/menu-1.png', text: 'Личный кабинет'},
+    {id: '5', url: '/cabinet', img: '/assets/images/menu-btn/menu-1.png', text: 'Личный кабинет'},
     {id: '6', url: '/contact', img: '/assets/images/menu-btn/menu-2.png', text: 'Контакты'},
   ],
   btnRestoran: [
@@ -42,7 +42,7 @@ export default {
     {id: '5', url: '/minimal-page/restoran/beer-system', img: '/assets/images/menu-btn/menu-3.png', text: 'Пивная система'},
     {id: '6', url: '/minimal-page/restoran/skud', img: '/assets/images/menu-btn/menu-1.png', text: 'СКУД'},
     {id: '7', url: '/minimal-page/restoran/special-service', img: '/assets/images/menu-btn/menu-2.png', text: 'Специальные услуги'},
-    {id: '8', url: '/auth', img: '/assets/images/menu-btn/menu-3.png', text: 'Личный кабинет'},
+    {id: '8', url: '/cabinet', img: '/assets/images/menu-btn/menu-3.png', text: 'Личный кабинет'},
     {id: '9', url: '/contact', img: '/assets/images/menu-btn/menu-2.png', text: 'Контакты'},
   ],
   btnTeplObor: [
