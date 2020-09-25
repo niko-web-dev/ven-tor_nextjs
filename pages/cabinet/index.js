@@ -4,9 +4,6 @@ import PhoneButton from '@/components/PhoneButton/PhoneButton'
 import Price from '@/components/price/Price';
 
 import { useUser } from '../../server/lib/hooks';
-const isAuth = true
-
-
 
 const AuthPage = () => {
 const [user] = useUser();
