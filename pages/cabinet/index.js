@@ -1,5 +1,7 @@
 import BackButton from '@/components/BackBtn/BackButton'
+import Form from '@/components/form/Form';
 import PhoneButton from '@/components/PhoneButton/PhoneButton'
+import Price from '@/components/price/Price';
 
 import { useUser } from '../../server/lib/hooks';
 const isAuth = true
@@ -13,26 +15,9 @@ const [user] = useUser();
         <div className="main">
         {!user
           ? 
-          <div className="form">
-            <h2>
-              Введите свою имя и email для просмотра полного прайса
-            </h2>
-            <form>
-              <input name="name" placeholder="Введите имя" type="text"/>
-              <input name="mail" placeholder="Введите email" type="text"/>
-
-            <button>Получить прайс</button>
-            </form>
-          </div> 
+            <Form/>
           : 
-          <div className="price">
-            <h2>
-              Прайсы
-            </h2>
-            <div className="price_list">
-
-            </div>
-          </div>
+            <Price/>
         }
         </div>
 
