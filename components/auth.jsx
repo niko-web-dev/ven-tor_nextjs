@@ -30,7 +30,16 @@ export default function Auth() {
         background: rgba(255,255,255,0.8);
         border-radius: 10%;
       }
-      
+      @media screen and (max-width: 760px) {
+        .auth {
+          
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .title {
+          flex-direction: column;
+        }
+      }
   `}</style>
     </div>
   )
