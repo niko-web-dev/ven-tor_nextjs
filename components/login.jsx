@@ -33,11 +33,11 @@ const LoginPage = () => {
   }
 
   return (
-      <>
+      <div className="login">
         <Head>
           <title>Sign in</title>
         </Head>
-        <h2>Sign in</h2>
+        
         <form onSubmit={onSubmit}>
           {errorMsg ? <p style={{ color: 'red' }}>{errorMsg}</p> : null}
           <label htmlFor="email">
@@ -56,12 +56,36 @@ const LoginPage = () => {
                 placeholder="Password"
             />
           </label>
-          <button type="submit">Sign in</button>
-          <Link href="/forgetpassword">
+          <button type="submit">Войти</button>
+          {/* <Link href="/forgetpassword">
             <a>Forget password</a>
-          </Link>
+          </Link> */}
         </form>
-      </>
+
+  <style>{`
+    form {
+      padding: 30px 50px;
+        background: rgba(255,255,255,0.8);
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    input {
+      margin-bottom: 20px;
+    }
+    button {
+      background: #ccc;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      color: #fff;
+    }
+  `}</style>
+      </div>
   );
 };
 

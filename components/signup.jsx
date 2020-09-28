@@ -37,10 +37,10 @@ const SignupPage = () => {
   return (
       <>
         <Head>
-          <title>Sign up</title>
+          <title>Регистрация</title>
         </Head>
         <div>
-          <h2>Sign up</h2>
+
           <form onSubmit={handleSubmit}>
             {errorMsg ? <p style={{ color: 'red' }}>{errorMsg}</p> : null}
             <label htmlFor="name">
@@ -67,9 +67,32 @@ const SignupPage = () => {
                   placeholder="Create a password"
               />
             </label>
-            <button type="submit">Sign up</button>
+            <button type="submit">Регистрация</button>
           </form>
         </div>
+        <style>{`
+    form {
+      padding: 30px 50px;
+        background: rgba(255,255,255,0.8);
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    input {
+      margin-bottom: 20px;
+    }
+    button {
+      background: #ccc;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      color: #fff;
+    }
+  `}</style>
       </>
   );
 };

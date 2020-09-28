@@ -1,9 +1,9 @@
 import BackButton from '@/components/BackBtn/BackButton'
-import Form from '@/components/form/Form';
 import PhoneButton from '@/components/PhoneButton/PhoneButton'
 import Price from '@/components/price/Price';
 
 import { useUser } from '../../server/lib/hooks';
+import Auth from '@/components/auth';
 
 const AuthPage = () => {
 const [user] = useUser();
@@ -12,12 +12,11 @@ const [user] = useUser();
         <div className="main">
         {!user
           ? 
-            <Form/>
+            <Auth/>
           : 
             <Price/>
         }
         </div>
-
         <div className="btn_bottom">
         <BackButton />
         <PhoneButton />
